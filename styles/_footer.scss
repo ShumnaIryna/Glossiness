@@ -1,0 +1,108 @@
+.footer {
+  padding: 50px 0px 0px;
+  display: flex;
+  margin-right: -75px;
+
+  &__small {
+    width: 27%;
+    padding: 50px 30px 60px 75px;
+    background-color: $background-yellow;
+
+    &__img {
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      font: $h7-font--reg;
+      padding-bottom: 75px;
+    }
+  }
+
+  &__big {
+    background-image: url(../img/footer-bg.png);
+    background-position: -505px;
+    width: 73%;
+    padding: 50px 75px 0px 115px;
+    display: flex;
+    gap: 125px;
+    font: $h4-font;
+    color: $white-color;
+
+    &__box {
+      &--first {
+        width: 29%;
+      }
+
+      &__cont {
+        padding-top: 40px;
+        a {
+          color: $white-color;
+        }
+      }
+
+      &__link {
+        padding-top: 30px;
+        a {
+          color: $white-color;
+        }
+      }
+
+      &__socials {
+        padding-top: 25px;
+        display: flex;
+        gap: 40px;
+      }
+
+      &--second {
+        width: 33%;
+      }
+
+      &--third {
+        width: 38%;
+      }
+
+      &__img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 15px;
+
+        img {
+          width: 50%;
+        }
+
+        img.width {
+          max-width: 94px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__small {
+      img {
+        width: 50%;
+      }
+    }
+
+    &__big {
+      gap: 50px;
+      padding-left: 75px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .footer {
+    flex-wrap: wrap;
+    &__small {
+      width: 100%;
+    }
+
+    &__big {
+      width: 100%;
+    }
+  }
+}

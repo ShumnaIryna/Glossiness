@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  // font: $main-font;
+  color: $primary-color;
+  // background-color: $background-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.heading {
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(../img/bg-heading.png) 100% / cover no-repeat;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.anchor {
+  position: relative;
+  top: 50px;
+}
+
+.bg-yell-grad {
+  background: $background-yellow-gradient;
+}
+
+.sm-title {
+  font: $h6-font-bold;
+  padding-bottom: 15px;
+}
+
+.sm-text {
+  font: $h7-font-bold;
+}

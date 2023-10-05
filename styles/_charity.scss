@@ -1,0 +1,98 @@
+.charity {
+  display: flex;
+  padding: 55px 75px 25px;
+  justify-content: space-between;
+
+  &__left {
+    width: 46%;
+    max-width: 749px;
+
+    &__title {
+      font: $h2-font;
+      padding-bottom: 90px;
+    }
+
+    &__text1 {
+      font: $h5-font-bold;
+      padding-bottom: 15px;
+    }
+
+    &__text2 {
+      font: $h5-font-reg;
+    }
+  }
+
+  &__right {
+    width: 54%;
+    padding-left: 0px;
+    position: relative;
+    z-index: -1;
+
+    &__images {
+      width: 100%;
+      position: relative;
+
+      img {
+        padding-top: 70px;
+      }
+    }
+
+    &__images::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      padding-bottom: 30%;
+      background-image: url(../img/charity-img3.png);
+      background-repeat: no-repeat;
+      right: -395px;
+      bottom: -85px;
+      z-index: 1;
+    }
+
+    &__images::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      padding-bottom: 30%;
+      background-image: url(../img/charity-img2.png);
+      background-repeat: no-repeat;
+      right: -344px;
+      bottom: 90px;
+      z-index: -2;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .charity {
+    flex-wrap: wrap;
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .charity {
+    &__right {
+      &__images::before {
+        bottom: 135px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .charity {
+    &__right {
+      &__images::before {
+        bottom: 180px;
+      }
+      &__images::after {
+        bottom: -10px;
+      }
+    }
+  }
+}
