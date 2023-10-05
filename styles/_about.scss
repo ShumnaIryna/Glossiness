@@ -83,3 +83,13 @@ nav {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .about {
+    &__details {
+      &__startups {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

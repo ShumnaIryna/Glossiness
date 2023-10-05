@@ -379,6 +379,11 @@ nav .about__details__startups__item--ukr img {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .about__details__startups {
+    flex-wrap: wrap;
+  }
+}
 .advantages {
   padding: 100px 75px 50px;
 }
@@ -388,7 +393,7 @@ nav .about__details__startups__item--ukr img {
 }
 .advantages__top, .advantages__bottom {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 250px;
 }
@@ -543,9 +548,50 @@ nav .about__details__startups__item--ukr img {
   background-color: #ffd00e;
 }
 
+@media (max-width: 1200px) {
+  .advantages__main__left {
+    flex-direction: row-reverse;
+    padding-top: 30px;
+    padding-right: 0;
+    gap: 5px;
+  }
+  .advantages__main__right {
+    flex-direction: row-reverse;
+    padding-top: 30px;
+    padding-left: 0;
+    gap: 5px;
+  }
+}
 @media (max-width: 1024px) {
   .advantages__box {
     flex-direction: column;
+  }
+  .advantages__main__center {
+    padding: 30px;
+  }
+  .advantages__main__center__circle {
+    width: 235px;
+  }
+  .advantages__main__center__circle__img {
+    padding: 35px;
+    border: 20px solid #ffd00e;
+  }
+  .advantages__main__border::before {
+    position: relative;
+  }
+}
+@media (max-width: 960px) {
+  .advantages__top, .advantages__bottom {
+    gap: 20px;
+  }
+  .advantages__main {
+    align-items: start;
+  }
+  .advantages__main__left {
+    padding-right: 40px;
+  }
+  .advantages__main__border {
+    display: none;
   }
 }
 .investment {
